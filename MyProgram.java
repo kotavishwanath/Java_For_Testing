@@ -124,6 +124,7 @@ public class MyProgram
         }
        
         MyProgram prog = new MyProgram();
+        //Uncomment the methods execution and test it out
         // prog.runMyProgram();
         // prog.diagonalPrinting();
         // prog.reverseDiagnolPrinting();
