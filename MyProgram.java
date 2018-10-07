@@ -8,8 +8,13 @@
 
 import javax.swing.JOptionPane;
 
-public class MyProgram
+class A{
+    int val_a = 12345;
+}
+
+public class MyProgram extends A
 {
+   static int a = 10;
     public void runMyProgram()
     {
         //Write your code here
@@ -115,6 +120,7 @@ public class MyProgram
 
     public static void main(String[] args)
     { 
+        System.out.print("\f");
         String msg = JOptionPane.showInputDialog("Enter your message");
         if (msg == null){
             System.out.print("Havent seen your message");
@@ -124,6 +130,7 @@ public class MyProgram
         }
        
         MyProgram prog = new MyProgram();
+        System.out.println( prog.val_a);
         //Uncomment the methods execution and test it out
         // prog.runMyProgram();
         // prog.diagonalPrinting();
@@ -132,5 +139,7 @@ public class MyProgram
         // prog.diagonalWithSquare();
         // prog.rightAngleTriangle();
         prog.invertRightAngledTriangle();
+        a = 30;
+        System.out.print(a);       
     }
 }
